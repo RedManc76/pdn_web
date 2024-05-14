@@ -16,14 +16,30 @@
 <body>
     <script src="./main_menu.html" type="text/javascript"></script>
 
-    <video id="john_intro_video" loading="lazy">
-        <source src="Videos/John Intro.mp4" type="video/mp4">
-    </video>
+    <div class="small_divide"></div>
+
+    <div class="full_video_container">
+        <video id="video_tract" width="100%">   
+            <source src="./Video/intro.mp4" type="video/mp4">
+        </video>
+    </div>
         
     <div class="small_divide"></div>
     
     <script src="./Scripts/jquery.js"></script>
     <script src="./Scripts/menu.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $('.full_video_container').click(function() {
+                var video = document.getElementById('video_tract');
+                if (video.paused || video.ended) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
