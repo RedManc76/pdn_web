@@ -19,7 +19,9 @@
     <div class="small_divide"></div>
 
     <div class="full_video_container">
+        <button id="play_button"><img src="./Images/play_button.png" alt="Play"></button>
         <video id="video_tract" width="100%">   
+            
             <source src="./Video/intro.mp4" type="video/mp4">
         </video>
     </div>
@@ -29,14 +31,36 @@
     <script src="./Scripts/jquery.js"></script>
     <script src="./Scripts/menu.js"></script>
 
+    <style>
+        #play_button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        #play_button img{
+            height: 150px;
+            width: 150px;
+        }        
+
+    </style>
+
     <script>
         $(document).ready(function() {
             $('.full_video_container').click(function() {
                 var video = document.getElementById('video_tract');
+                var button = document.getElementById('play_button');
+
                 if (video.paused || video.ended) {
                     video.play();
+                    $(button).css('opacity', '0');
                 } else {
                     video.pause();
+                    $(button).css('opacity', '1');
                 }
             });
         });
