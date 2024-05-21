@@ -17,7 +17,9 @@
 }
 
 .logo {
-    max-width: 90px; /* Adjust the max-width as needed */
+    min-height: 70px;
+    max-height: 100px;
+    height: 10vh; /* Adjust the max-width as needed */
     position: absolute;
     left: 50px; /* Adjust the left position as needed */
     top: 50%;
@@ -30,7 +32,7 @@
 }
 
 #menuTitle{
-    font-size: 50px;
+    font-size: 3.5vw;
     color: #fce517;
     position: relative;
 }
@@ -45,7 +47,7 @@ nav {
     padding: 10px;
     text-align: center;
     width: 100%;
-    min-height: 50px;
+    min-height: 30px;
     height: 5vh;
     z-index: 10;
 }
@@ -63,7 +65,7 @@ li {
     position: relative;
 }
 
-a {
+#navbar a {
     text-decoration: none;
     color: #ecf0f1;
     font-weight: bold;
@@ -73,7 +75,21 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover {
+#navbar a:hover {
+    color: #3498db;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
     color: #3498db;
 }
 
