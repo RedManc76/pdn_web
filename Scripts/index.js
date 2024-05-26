@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.full_video_container').click(function() {
-        var video = document.getElementById('video_tract');
+        var video = document.getElementById('video_intro');
         var button = document.getElementById('play_button');
 
         if (video.paused || video.ended) {
