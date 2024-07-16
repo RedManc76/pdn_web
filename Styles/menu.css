@@ -37,6 +37,20 @@
     position: relative;
 }
 
+#mainMenuTitle{
+    font-size: 3.5vw;
+    color: #fce517;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+#menuSubTitle{
+    font-size: 2vw;
+    color: #fff492;
+    position: relative;
+}
+
+
 nav {
     position: relative;
     display: flex;

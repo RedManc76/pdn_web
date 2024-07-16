@@ -1,0 +1,46 @@
+.cover_title{
+    position: absolute;
+    font-size: 8vh;
+    top: 40%;
+    left: calc(50% + 20vh);
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+.offset_play_button{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-100%, -50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.offset_play_button img{
+    height: 20vh;
+    width: 20vh;
+} 
+
+@media only screen and (max-width: 768px) {
+
+    .cover_title{
+        position: absolute;
+        font-size: 7vw;
+        top: 40%;
+        left: calc(50% + 20vw);
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+    }
+    
+    .offset_play_button{
+        left: 45%;
+    }
+    
+    .offset_play_button img{
+        height: 18vw;
+        width: 18vw;
+    } 
+
+
+}
