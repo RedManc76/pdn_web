@@ -649,9 +649,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
             add_watch_title(index, "Chapters");
             add_watch_topic(index, "Meeting at the well - 0:25");
-            add_watch_topic(index, "God who sympathizes - 3:09");
-            add_watch_topic(index, "Living Water - 5:39");
-            add_watch_topic(index, "An immoral women - 8:38");
+            add_watch_topic(index, "Biblical Accuracy - 3:09");
+            add_watch_topic(index, "Personal Message - 5:39");
+            add_watch_topic(index, "Living Water - 8:38");
             add_watch_topic(index, "True worship - 11:01");
             add_watch_title(index, "Biblical Terms");
             add_watch_term(index, "Holy Spirit: third person of the Godhead, God is one but subsists in three distinct person, Father, Son (Jesus) and Holy Spirit.");
