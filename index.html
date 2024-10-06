@@ -3,65 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prayer Discipleship Academy</title>
+    <title>Biblical Reformation</title>
     <meta name="description" content="Propagation of Christian religion and to glorify Jesus Christ through the advancement of his kingdom">
     <meta name="keywords" content="Jesus Christ, Christianity, evangelism, discipleship, prayer, street preaching, bible">
-    <meta name="author" content="Prayer Discipleship Academy">
+    <meta name="author" content="Biblical Reformation">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1HYCJJ407"></script>
-    <script src="../../Scripts/analytics.js"></script>
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P40KG9YVY3"></script>
+    <script src="./Scripts/analytics.js"></script>    
+
+    <script src="./Scripts/preload.js"></script>
     <link rel="stylesheet" href="./Styles/general.css">
     <link rel="stylesheet" href="./Styles/menu.css">
+    <link rel="stylesheet" href="./Styles/index_main.css">
+    <link rel="stylesheet" href="./Styles/index_mobile.css">
     <link rel="stylesheet" href="./Styles/index.css">
-    <link rel="stylesheet" href="./Styles/link_button.css">
 
 </head>
 <body>
     <script src="./main_menu.html" type="text/javascript"></script>
 
-    <div class="desktop">
-
-        <div class="full_video_container" id="intro_desktop">
-            <div class="full_video_overlay">
-                <button class="play_button" id="play_button_desktop"><img src="./Images/play_button.png" alt="Play"></button>
-                <img src="Images/intro_cover.jpg" id="intro_cover_desktop" alt="Play video">
-            </div>
-            <video class="video_file"  id="video_desktop">   
-                <source src="./Video/intro.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <a class="link_button" href="./Desktop/About/purpose_d.html"><div class="btn">
-            <div class="side default-side">Step One</div>
-            <div class="side hidden-side">Introductory Videos</div></div>
-        </a>
-    
-    </div>
-
     <div class="mobile">
 
-        <div class="small_divide"></div>
-        <div class="full_video_container" id="intro_mobile">
-            <div class="full_video_overlay">
-                <button class="play_button"  id="play_button_mobile"><img src="./Images/play_button.png" alt="Play"></button>
-                <img src="Images/intro_cover_mobile.jpg" id="intro_cover_mobile" alt="Play video">
+        <div class="mobile_menu_spacer"></div>
+
+        <div class="mobile_primary_container">
+
+            <div class="mobile_container">
+                <div class="overlay"></div>
+                <img src="./Images/main/explore_mobile.jpg" alt="explore image">
+                <h1 class="overlay_title">Discover</h1>
+                <h2 class="overlay_subtitle">Jesus Christ</h2>
             </div>
-            <video class="video_file" id="video_mobile">   
-                <source src="./Video/intro_mobile.mp4" type="video/mp4">
-            </video>
+            <div class="mobile_container">
+                <div class="overlay"></div>
+                <img src="./Images/main/seeker_mobile.jpg" alt="seekers image">
+                <h1 class="overlay_title">Seeking?</h1>
+                <h2 class="overlay_subtitle">Start Here</h2>
+            </div>
+            <div class="mobile_container">
+                <div class="overlay"></div>
+                <img src="./Images/main/web_mobile.jpg" alt="web image">
+                <h1 class="overlay_title">Explore</h1>
+                <h2 class="overlay_subtitle">Core Content</h2>
+            </div>
+
         </div>
 
-        <a class="link_button" href="./Mobile/About/purpose.html"><div class="btn">
-            <div class="side default-side">Step One</div>
-            <div class="side hidden-side">Introductory Videos</div></div>
-        </a>
+        <div class="mobile_secondary_container">
+            <div class="john_mobile_intro_container">
+                <div class="john_mobile_intro_overlay_container">
+                    <button id="play_john_mobile_button"><img src="Images/play_button.png" alt="Play"></button>
+                    <img src="Images/main/explore_mobile.jpg" alt="Play video">
+                </div>
+                <div class="john_mobile_intro_video_container">
+                    <video id="john_mobile_intro_video" loading="lazy">
+                        <source src="Videos/John Mobile.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <a class="link_button" href="Mobile Pages/Seek/jesus.html" title="Watch Video Commentary">Start Your Journey</a>
+            </div>
+            <div class="seeker_mobile_intro_container">
+                <div class="seeker_mobile_intro_overlay_container">
+                    <button id="play_seeker_mobile_button"><img src="Images/play_button.png" alt="Play"></button>
+                    <img src="Images/main/seeker_mobile.jpg" alt="Play video">
+                </div>
+                <div class="seeker_mobile_intro_video_container">
+                    <video id="seeker_mobile_intro_video" loading="lazy">
+                        <source src="Videos/Seeker Mobile.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <a class="link_button" href="Mobile Pages/Seek/seeking.html" title="Start Seeking Christianity">Start Your Journey</a>
+            </div>
+            <div class="core_mobile_intro_container">
+                <a class="link_header" href="Mobile Pages/Seek/gospel.html" title="Good news">Good News</a>
+                <a class="link_header" href="Mobile Pages/Connect/church.html" title="Find a Church">Find a Church</a>
+                <a class="link_header" href="Mobile Pages/Prayer/request.html" title="Prayer Request">Prayer Request</a>
+                <a class="link_header" href="Mobile Pages/Literature/literature selection.html" title="Topics">Topics</a>
+                <a class="link_header" href="Mobile Pages/Religion/religion selection.html" title="World Religions">World Religions</a>
+                <a class="link_header" href="Mobile Pages/Ministry/apologetics.html" title="Apologetics">Apologetics</a>
+                <a class="link_header" href="Mobile Pages/Seek/bible.html" title="Biblical Reliability">Biblical Reliability</a>
+                <a class="link_header" href="Mobile Pages/Connect/contact.html" title="Contact">Contact</a>
+            </div>
+        </div>
 
+        <div class="mobile_menu_return"><img src="./Images/Jesus/up_arrow.png" alt="Up Arrow" class="up_arrow"></div>
+
+        <script src="./Scripts/jquery.js"></script>
+        <script src="./Scripts/index_mobile.js"></script>
+        
     </div>
 
-    <script src="./Scripts/jquery.js"></script>
+    <div class="desktop">
+
+        <!-- main screen -->
+        <div class="main_screen_container">
+            <script src="Desktop%20Pages/Main/scrollwheel_gesture.html" type="text/javascript"></script>
+            <div class="main_slider">
+                <div data-target="1" class="main_slide main_slide_1">
+                    <div class="main_slide_darkbg main_slide_1_darkbg">
+                        <div class="main_title_container" id="main_slide_1_heading">
+                            <h1 class="main_slide_title">Discover</h1>
+                            <h1 class="main_slide_subtitle">Jesus Christ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="2" class="main_slide main_slide_2">
+                    <div class="main_slide_darkbg main_slide_2_darkbg">
+                        <div class="main_title_container" id="main_slide_2_heading">
+                            <h1 class="main_slide_title">Seeking?</h1>
+                            <h1 class="main_slide_subtitle"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="3" class="main_slide main_slide_3">
+                    <div class="main_slide_darkbg main_slide_3_darkbg">
+                        <div class="main_title_container" id="main_slide_3_heading">
+                            <h1 class="main_slide_title">Explore</h1>
+                            <h1 class="main_slide_subtitle">Core Content</h1>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="4" class="main_slide main_slide_4">
+                    <div class="main_slide_darkbg main_slide_4_darkbg">
+                        <div class="main_title_container" id="main_slide_4_heading">
+                            <h1 class="main_slide_title">Check Out</h1>
+                            <h1 class="main_slide_subtitle">Literature</h1>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="5" class="main_slide main_slide_5">
+                    <div class="main_slide_darkbg main_slide_5_darkbg">
+                        <div class="main_title_container" id="main_slide_5_heading">
+                            <h1 class="main_slide_title">Compare</h1>
+                            <h1 class="main_slide_subtitle">Faith Traditions</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="main_navigation_bar">
+                <li data-target="1" class="main_nav_slide main_nav_slide_1"></li>
+                <li data-target="2" class="main_nav_slide main_nav_slide_2"></li>
+                <li data-target="3" class="main_nav_slide main_nav_slide_3"></li>
+                <li data-target="4" class="main_nav_slide main_nav_slide_4"></li>
+                <li data-target="5" class="main_nav_slide main_nav_slide_5"></li>
+        </div>
+        <div data-target='right' class="main_side_nav main_side_nav_right"></div>
+        <div data-target='left' class="main_side_nav main_side_nav_left"></div>
+        
+        <div class="small_divide"></div>
+        
+        <!-- John -->
+        <div class="john_container">
+        
+            <div class="small_divide"></div>
+            <div class="small_divide"></div>
+            <div class="small_divide"></div>
+        
+            <div class="john_intro_container">
+                <div class="john_intro_overlay" id="john_intro_overlay">
+                    <button id="play_john_button"><img src="Images/play_button.png" alt="Play"></button>
+                    <img src="Images/main/explore_overlay.jpg" alt="Play video">
+                </div>
+                <video id="john_intro_video" loading="lazy">
+                    <source src="Videos/John Intro.mp4" type="video/mp4">
+                </video>
+            </div>
+        
+            <div class="small_divide"></div>
+        
+            <a class="link_button" href="Desktop Pages/Seek/jesus_d.html" title="Watch Video Commentary">Start Your Journey</a>
+        
+            <div class="small_divide"></div>
+            <div class="small_divide"></div>
+        
+        </div>
+        
+        <div class="small_divide"></div>
+
+        <!-- seeking -->
+        <div class="seeking_container">
+
+            <div class="small_divide"></div>
+            <div class="small_divide"></div>
+            <div class="small_divide"></div>
+        
+            <div class="seeking_intro_container">
+                <div class="seeking_intro_overlay" id="seeking_intro_overlay">
+                    <button id="play_seeker_button"><img src="Images/play_button.png" alt="Play"></button>
+                    <img src="Images/main/seeking_overlay.jpg" alt="Play video">
+                </div>
+                <video id="seeking_intro_video" loading="lazy">
+                    <source src="Videos/Seeking Intro.mp4" type="video/mp4">
+                </video>
+            </div>
+        
+            <div class="small_divide"></div>
+        
+            <a class="link_button" href="Desktop Pages/Seek/seeking_d.html" title="Start Seeking">Start Here</a>
+        
+            <div class="small_divide"></div>
+            <div class="small_divide"></div>
+        
+        </div>
+        
+        <div class="small_divide"></div>
+
+        <!-- core -->
+        <div class="core_main_container"></div>  
+        
+        <div class="small_divide"></div>
+        
+        <!-- Literature -->
+        <div class="tv_main literature_container">
+            <h1 class="container_title" >Literature</h1>
+            <div class="tv_container">
+                <div class="tv_screen_left" id="tv_screen_1">
+                    <div class="tv_screen_line" id="tv_screen_1_top">
+                        <div class="tv_screen_slider" id="tv_screen_1_slider_top"></div>
+                    </div>
+                    <div class="tv_screen_line" id="tv_screen_1_bottom">
+                        <div class="tv_screen_text_background">
+                            <h3 class="tv_screen_text" id="tv_screen_1_text"></h3>
+                            <div class="tv_screen_slider" id="tv_screen_1_slider_bottom"></div>
+                        </div>
+                    </div>
+                    <script src="Desktop%20Pages/Main/single_tap_literature_gesture.html" type="text/javascript"></script>
+                </div>
+                <div class="screen_1_links headersCol">
+                    <h2 id="Grace">Grace</h2>
+                    <h2 id="Good">Good</h2>
+                    <h2 id="MentalHealth">Mental Health</h2>
+                    <h2 id="Identity">Identity</h2>
+                    <h2 id="Abortion">Abortion</h2>
+                    <h2 id="Pornography">Pornography</h2>
+                    <h2 id="Death">Death</h2>
+                    <h2 id="GodsName">Gods Name</h2>
+                </div>
+                <div class="screen_1_links headersCol">
+                    <h2 id="Fear">Fear</h2>
+                    <h2 id="Masculinity">Masculinity</h2>
+                    <h2 id="Love">Love</h2>
+                    <h2 id="BornAgain">Born Again</h2>
+                    <h2 id="Quran">Quran or Bible</h2>
+                    <h2 id="Bereavement">Bereavement</h2>
+                    <h2 id="Conscience">Conscience</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="small_divide"></div>
+        
+        <!-- Religion -->
+        <div class="tv_main religion_container">
+            <h1 class="container_title">Religions</h1>
+            <div class="tv_container">
+                <div class="screen_2_links headersCol">
+                    <h2 id="Christian">Christianity</h2>
+                    <h2 id="Atheist">Atheistism</h2>
+                    <h2 id="Islam">Islam</h2>
+                    <h2 id="Roman">Roman Catholic</h2>
+                    <h2 id="Mormon">Mormonism</h2>
+                </div>
+                <div class="screen_2_links headersCol">
+                    <h2 id="Witness">Jehovah Witness</h2>
+                    <h2 id="Disciple">Disciple</h2>
+                    <h2 id="Advent">Adventist</h2>
+                    <h2 id="Scientist">Christian Scientist</h2>
+                    <h2 id="Unitarian">Unitarian</h2>
+                </div>
+                <div class="tv_screen_right" id="tv_screen_2">
+                    <div class="tv_screen_line" id="tv_screen_2_top">
+                        <div class="tv_screen_slider" id="tv_screen_2_slider_top"></div>
+                    </div>
+                    <div class="tv_screen_line" id="tv_screen_2_bottom">
+                        <div class="tv_screen_text_background">
+                            <h3 class="tv_screen_text" id="tv_screen_2_text"></h3>
+                            <div class="tv_screen_slider" id="tv_screen_2_slider_bottom"></div>
+                        </div>
+                    </div>
+                    <script src="Desktop%20Pages/Main/single_tap_religion_gesture.html" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+        
+        <div class="small_divide"></div>
+
+        <link rel="stylesheet" href="./Styles/index_john.css">
+        <link rel="stylesheet" href="./Styles/index_seeking.css">
+        <link rel="stylesheet" href="./Styles/index_core.css">
+        <link rel="stylesheet" href="./Styles/index_tv.css">
+        
+        <script src="./Scripts/jquery.js"></script>
+        <script src="./Scripts/index_main.js"></script>
+        <script src="./Scripts/index_john.js"></script>
+        <script src="./Scripts/index_seeker.js"></script>
+        <script src="./Scripts/index_literature.js"></script>
+        <script src="./Scripts/index_religion.js"></script>
+        <script src="./Scripts/index_core.js"></script>
+
+    </div>
     <script src="./Scripts/menu.js"></script>
-    <script src="./Scripts/index.js"></script>
-    
+
 </body>
 </html>
