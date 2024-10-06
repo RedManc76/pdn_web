@@ -641,7 +641,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         function create_session_12(index){
-            add_main_video(index, "81fwwDEWx_o");
+            add_main_video(index, "hzMvaKdblxg");
             add_video_title(index, "Women at the Well part 1");
             add_reading(index, "John 4:1-45");
     
@@ -649,10 +649,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
             add_watch_title(index, "Chapters");
             add_watch_topic(index, "Meeting at the well - 0:25");
-            add_watch_topic(index, "Biblical Accuracy - 3:09");
-            add_watch_topic(index, "Personal Message - 5:39");
-            add_watch_topic(index, "Living Water - 8:38");
-            add_watch_topic(index, "True worship - 11:01");
+            add_watch_topic(index, "Biblical Accuracy - 2:28");
+            add_watch_topic(index, "Personal Message - 3:55");
+            add_watch_topic(index, "Living Water - 8:03");
+            add_watch_topic(index, "True worship - 11:29");
             add_watch_title(index, "Biblical Terms");
             add_watch_term(index, "Holy Spirit: third person of the Godhead, God is one but subsists in three distinct person, Father, Son (Jesus) and Holy Spirit.");
             add_watch_term(index, "Living Water: the gift of the Holy Spirit.");
