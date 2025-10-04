@@ -38,14 +38,16 @@
 }
 
 #mainMenuTitle{
-    font-size: 3.5vw;
+    font-size: 40px;
     color: #fce517;
     position: relative;
-    margin-bottom: -10px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 #menuSubTitle{
-    font-size: 2vw;
+    font-size: 25px;
+    margin-top: 10px;
     color: #fff492;
     position: relative;
 }
@@ -74,6 +76,12 @@ ul {
     justify-content: center;
 }
 
+ur {
+    position: absolute;
+    right: 2%;
+    font-size: 100px;
+}
+
 li {
     margin: 0 1vw;
     position: relative;
@@ -87,6 +95,10 @@ li {
     padding: 10px;
     display: block;
     transition: color 0.3s ease;
+}
+
+#navbar ur a {
+    font-size: 15px;
 }
 
 #navbar a:hover {
@@ -187,6 +199,14 @@ ul.submenu li:last-child {
         color: #ecf0f1;
         font-weight: bold;
         margin: -10px;
+        display: block;
+        transition: color 0.3s ease;
+    }
+
+    .mobile_menu-item-church a{
+        text-decoration: none;
+        color: #f5ff9b;
+        font-weight: bold;
         display: block;
         transition: color 0.3s ease;
     }

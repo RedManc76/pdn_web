@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     perspective: 800px;
+    margin: 7px;
 }
 
 .link_button .btn {
