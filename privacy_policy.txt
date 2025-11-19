@@ -1,0 +1,97 @@
+Privacy Policy for Prayer Discipleship Academy (PDA App)
+Last updated: {{today’s date}}
+
+The PDA app (“we”, “our”, “the app”) is designed to provide users with access to devotional and teaching content. This privacy policy explains what information we collect, how it is used, and how it is protected.
+
+1. Information We Collect
+a) Information You Voluntarily Submit
+
+The app includes a form that sends user-entered details via Formspree.
+When you complete the form, the following information may be collected:
+
+Your name
+
+Your email address
+
+Any content you type into the form fields
+
+This information is sent directly to us via Formspree and is not stored in the app.
+
+b) Contact Email
+
+If you use the “Contact” button, your email app opens with a pre-filled address.
+We receive only what you choose to send.
+
+c) No Automatic Tracking
+
+The PDA app does not collect or store:
+
+Personal data automatically
+
+Analytics
+
+Device identifiers
+
+Location data
+
+Cookies
+
+Advertising IDs
+
+The app displays static content only.
+
+2. How We Use Your Information
+
+Information submitted through Formspree or email is used only to respond to enquiries or application forms.
+
+We do not:
+
+Sell your data
+
+Share it with third parties (except Formspree as the form processor)
+
+Use your data for marketing without consent
+
+3. Third-Party Services
+Formspree
+
+Form submissions are processed by Formspree.
+Formspree may collect technical data required to deliver the submission (e.g., IP address).
+For more details, see Formspree’s privacy policy:
+https://formspree.io/legal/privacy-policy/
+
+External Website Links
+
+The app includes links to our website.
+We are not responsible for the content or policies of external sites.
+
+4. Data Security
+
+We take reasonable steps to protect the information you send us.
+However, no internet transmission is 100% secure.
+
+5. Children’s Privacy
+
+The app is not intended for children under 13, and we do not knowingly collect data from children.
+
+6. Your Rights
+
+You may request:
+
+Access to data you’ve submitted
+
+Correction or deletion of your data
+
+You may contact us at: ppp@yahoo.com
+.
+
+7. Changes to This Policy
+
+We may update this policy from time to time.
+The date at the top will be revised when changes occur.
+
+8. Contact Us
+
+If you have any questions, please contact:
+
+📧 biblicalreformation@gmail.com
