@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #fde4b5, rgb(155, 118, 49));
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex: 1;
+    height: 86vh;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    width: 100%;
+    gap: 0;
+    overflow: hidden;
+}
+
+.app-bar {
+    height: 8vh;
+    background-color: #3a3900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.app-bar h1 {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow; /* your yellow text */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.back-arrow {
+    padding-left: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+    color: whitesmoke;
+}
+
+.app-bar .left,
+.app-bar .right {
+    width: 40px;
+}
+
+.scroll-area {
+    width: 50%;
+    overflow-y: auto;
+}
+
+.scroll-area-full {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.church_edition{
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    left: 35vw;
+    bottom: 3vh;
+    width: 30vw;
+    padding: clamp(0px, 1.5vh, 12px) 0;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    .scroll-area {
+        width: 100%;
+    }
+
+}
