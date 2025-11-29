@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introductory Videos</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../styles/video.css">
+    <link rel="stylesheet" href="../styles/button.css">
+    <link rel="stylesheet" href="../styles/generic.css">
+    <script src="../scripts/video.js" defer></script>
+    <script src="../scripts/intro_church.js" defer></script>
+
+</head>
+
+<body>
+    <div class="app-bar">
+        <div class="left">
+            <span class="back-arrow" onclick="history.back()">&#11164;</span>
+        </div>
+        <h1 class="title">Introductory Videos</h1>
+        <div class="right"></div>
+    </div>
+
+    <div class="page-container">
+        <div class="video-box video-box-extended">
+            <video id="videoPlayer" class="video-player" src="../videos/necessity.mp4"></video>
+            <div id="playOverlay" class="play-overlay">&#9658;</div>
+        </div>
+
+        <div class="video-list-container" id="videoList"></div>
+
+    </div>
+</body>
+
+</html>

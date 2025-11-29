@@ -1,22 +1,14 @@
-$('#structure_container').click(function() {
-    var video = document.getElementById('structure_video');
-    var button = document.getElementById('structure_play_button');
-    var cover = document.getElementById('structure_cover');
-    var title = document.getElementById('structure_cover_title');
+/* Load correct video on page load */
+document.addEventListener("DOMContentLoaded", () => {
+    const videoPlayer = document.getElementById('videoPlayer');
 
-    if (video.paused || video.ended) {
-        stop_all()
-        video.play();
-        $(button).css('opacity', '0');
-        $(cover).css('opacity', '0');
-        $(title).css('opacity', '0');
-    } else {
-        stop_all()
-        $(button).css('opacity', '1');
+    const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|webOS/i.test(navigator.userAgent);
+
+    function getVideoPath(baseName) {
+        return isMobile
+            ? `../videos/${baseName}_mobile.mp4`
+            : `../videos/${baseName}.mp4`;
     }
-});
 
-function stop_all(){
-    document.getElementById('structure_video').pause();
-    $(document.getElementById('structure_play_button')).css('opacity', '1');
-}
+    videoPlayer.src = getVideoPath("physical");
+});

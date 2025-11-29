@@ -1,0 +1,68 @@
+.list-container {
+    width: 100%;             /* Full width to keep scrollbar on far right */
+    max-width: 100%;         /* Prevent container from shrinking */
+    max-height: 100%;
+    overflow-y: auto;
+    position: relative;
+    display: flex;           /* Use flex to center inner content */
+    justify-content: center; /* Center horizontally */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.list-inner {
+    max-width: 900px;        /* Limit content width */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-card {
+    background: #3a3900;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s;
+}
+
+.item-card.expanded {
+    color: gold;
+}
+
+.item-content {
+    background: rgba(58, 57, 0, 0.85);
+    padding: 16px;
+    margin-top: -6px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line;
+    font-size: 18px;
+    text-align: center;
+    /* <-- Center justify text */
+}
+
+.fade-open {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
