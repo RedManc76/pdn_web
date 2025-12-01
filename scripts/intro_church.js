@@ -10,59 +10,124 @@ const videos = [
   { title: "Charge", src: "charge" }
 ];
 
-const videoPlayer = document.getElementById('videoPlayer');
-const playOverlay = document.getElementById('playOverlay');
-const videoListContainer = document.getElementById('videoList');
+const video = document.getElementById("videoPlayer");
+const overlay = document.getElementById("playOverlay");
+const spinner = document.getElementById("videoLoading");
+const progressBar = document.getElementById("videoProgress");
+const videoListContainer = document.getElementById("videoList");
 
 let currentVideoIndex = 0;
 
-function getVideoPath(baseName) {
-  if (isMobile) {
-    return `../videos/${baseName}_mobile.mp4`;
-  }
-  return `../videos/${baseName}.mp4`;
+// ------------------------
+// Path builder
+// ------------------------
+function getVideoPath(name) {
+  return isMobile
+    ? `../videos/${name}_mobile.mp4`
+    : `../videos/${name}.mp4`;
 }
 
+// ------------------------
+// Overlay helper
+// ------------------------
+function updateOverlay() {
+  overlay.style.display = video.paused ? "flex" : "none";
+}
+
+// ------------------------
+// Reset UI for loading
+// ------------------------
+function resetLoadingUI() {
+  overlay.classList.add("hidden");
+  video.classList.add("loading");
+  spinner.style.display = "block";
+  progressBar.style.opacity = "0";
+  progressBar.style.width = "0%";
+}
+
+// ------------------------
+// Show progress bar after 1 second
+// ------------------------
+function showProgressBar() {
+  progressBar.style.opacity = ".6";
+  progressBar.style.width = "80%";
+}
+
+// ------------------------
+// Load selected video
+// ------------------------
 function setVideo(index) {
   currentVideoIndex = index;
-  const baseName = videos[index].src;
-  videoPlayer.src = getVideoPath(baseName);
-  videoPlayer.pause();
-  updateOverlay();
+  const base = videos[index].src;
+
+  resetLoadingUI();
+
+  video.src = getVideoPath(base);
+  video.load();
+  video.pause(); // ensure paused before play
+
   updateList();
 }
 
+// ------------------------
+// Build the list UI
+// ------------------------
 function updateList() {
-  videoListContainer.innerHTML = '';
-  videos.forEach((video, index) => {
-    const card = document.createElement('div');
-    card.className = 'video-card';
-    if (index === currentVideoIndex) card.classList.add('current');
-    else if (index === currentVideoIndex + 1) card.classList.add('next');
+  videoListContainer.innerHTML = "";
 
-    card.textContent = video.title;
-    card.onclick = () => setVideo(index);
+  videos.forEach((v, i) => {
+    const card = document.createElement("div");
+    card.className = "video-card";
+    if (i === currentVideoIndex) card.classList.add("current");
+    if (i === currentVideoIndex + 1) card.classList.add("next");
+
+    card.textContent = v.title;
+    card.onclick = () => setVideo(i);
 
     videoListContainer.appendChild(card);
   });
 }
 
-videoPlayer.addEventListener('ended', updateOverlay);
-
-// Initialize
-updateList();
-
-document.addEventListener("DOMContentLoaded", () => {
-  const videoPlayer = document.getElementById('videoPlayer');
-
-  const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|webOS/i.test(navigator.userAgent);
-
-  function getVideoPath(baseName) {
-    return isMobile
-      ? `../videos/${baseName}_mobile.mp4`
-      : `../videos/${baseName}.mp4`;
+// ------------------------
+// Update progress bar
+// ------------------------
+function updateProgress() {
+  if (video.duration) {
+    progressBar.value = (video.currentTime / video.duration) * 100;
   }
+}
 
-  // Load correct video on first load
-  videoPlayer.src = getVideoPath("necessity");
+// ------------------------
+// Events
+// ------------------------
+
+// Overlay click to toggle play/pause
+video.parentElement.addEventListener("click", () => {
+  if (video.paused) video.play();
+  else video.pause();
+  updateOverlay();
 });
+
+// Update overlay when video ends
+video.addEventListener("ended", updateOverlay);
+
+// Video loaded
+video.addEventListener("loadeddata", () => {
+  spinner.style.display = "none";
+  video.classList.remove("loading");
+  overlay.classList.remove("hidden");
+  updateOverlay();
+  progressBar.value = 0;
+
+  // Show progress bar with delay
+  setTimeout(showProgressBar, 1000);
+});
+
+// Update progress during playback
+video.addEventListener("timeupdate", updateProgress);
+
+// ------------------------
+// Initial load
+// ------------------------
+setVideo(0);
+updateList();

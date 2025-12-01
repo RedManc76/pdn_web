@@ -38,7 +38,7 @@
     border: 5px solid white;
     color: white;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: clamp(0px, 3.5vh, 25px);
     font-weight: bold;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
     text-decoration: none;
@@ -127,9 +127,13 @@
         gap: 12px;
     }
 
+    .custom-btn {
+        font-size: clamp(0px, 5.5vw, 2vh);
+    }
+
     .switch-btn {
         left: 10vw;
-        bottom: 3vh;
+        bottom: 6vw;
         width: 80vw;
     }
 

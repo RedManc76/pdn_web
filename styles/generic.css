@@ -11,15 +11,15 @@ body {
     display: flex;
     flex: 1;
     height: 86vh;
-    padding-top: 2vh;
-    padding-bottom: 4vh;
+    padding-top: 0vh;
+    padding-bottom: 2vh;
     width: 100%;
     gap: 0;
     overflow: hidden;
 }
 
 .app-bar {
-    height: 8vh;
+    height: 10vh;
     background-color: #3a3900;
     display: flex;
     justify-content: center;
@@ -32,11 +32,10 @@ body {
     margin: 0;
     text-align: center;
     flex: 1;
-    font-size: 24px;
+    color: yellow;
+    /* your yellow text */
     font-weight: bold;
-    color: yellow; /* your yellow text */
-    font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 4.5vh;
 }
 
 .back-arrow {
@@ -62,7 +61,7 @@ body {
     overflow-y: auto;
 }
 
-.church_edition{
+.church_edition {
     font-size: 2rem;
     margin: 0;
     position: absolute;
@@ -79,10 +78,20 @@ body {
 @media (max-width: 700px) {
     .page-container {
         flex-direction: column;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
     }
 
     .scroll-area {
         width: 100%;
+    }
+
+    .app-bar {
+        height: 8vh;
+    }
+
+    .app-bar h1 {
+        font-size: 2.5vh;
     }
 
 }

@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDA Home</title>
+    <meta name="description"
+        content="Propagation of Christian religion and to glorify Jesus Christ through the advancement of his kingdom">
+    <meta name="keywords"
+        content="Jesus Christ, Christianity, evangelism, discipleship, prayer, street preaching, bible">
+    <meta name="author" content="Prayer Discipleship Academy">
+
+    <link rel="icon" type="image/x-icon" href="/Images/mainicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/mainicon.png">
+    <link rel="icon" type="image/svg+xml" href="/Images/mainicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/mainicon.png">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1HYCJJ407"></script>
+    <script src="./scripts/analytics.js"></script>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="./styles/video.css">
@@ -23,9 +36,11 @@
 
     <div class="page-container">
 
-        <div class="video-box video-box-extended">
+        <div class="video-box video-box-extended" id="videoContainer">
+            <div id="videoLoading" class="loading-spinner"></div>
             <video id="videoPlayer" class="video-player" src="./videos/intro_mobile.mp4"></video>
             <div id="playOverlay" class="play-overlay">&#9658;</div>
+            <progress id="videoProgress" value="0" max="100"></progress>
         </div>
 
         <div class="button-area">
