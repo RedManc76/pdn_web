@@ -42,9 +42,11 @@
 
     <div class="page-container">
 
-        <div class="video-box">
-            <video id="videoPlayer" class="video-player"></video>
+        <div class="video-box video-box-extended" id="videoContainer">
+            <div id="videoLoading" class="loading-spinner"></div>
+            <video id="videoPlayer" class="video-player" src="../videos/physical_church_mobile.mp4"></video>
             <div id="playOverlay" class="play-overlay">&#9658;</div>
+            <progress id="videoProgress" value="0" max="100"></progress>
         </div>
 
         <div class="scroll-area">

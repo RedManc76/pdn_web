@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introductory Videos</title>
-    <meta name="description" content="Propagation of Christian religion and to glorify Jesus Christ through the advancement of his kingdom">
-    <meta name="keywords" content="Jesus Christ, Christianity, evangelism, discipleship, prayer, street preaching, bible">
+    <meta name="description"
+        content="Propagation of Christian religion and to glorify Jesus Christ through the advancement of his kingdom">
+    <meta name="keywords"
+        content="Jesus Christ, Christianity, evangelism, discipleship, prayer, street preaching, bible">
     <meta name="author" content="Prayer Discipleship Academy">
-    
+
     <link rel="icon" type="image/x-icon" href="/Images/mainicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/Images/mainicon.png">
     <link rel="icon" type="image/svg+xml" href="/Images/mainicon.svg">
@@ -21,7 +23,6 @@
     <link rel="stylesheet" href="../styles/video.css">
     <link rel="stylesheet" href="../styles/button.css">
     <link rel="stylesheet" href="../styles/generic.css">
-    <script src="../scripts/video.js" defer></script>
     <script src="../scripts/intro.js" defer></script>
 
 </head>
@@ -37,8 +38,10 @@
 
     <div class="page-container">
         <div class="video-box video-box-extended">
+            <div id="videoLoading" class="loading-spinner"></div>
             <video id="videoPlayer" class="video-player" src="../videos/necessity.mp4"></video>
             <div id="playOverlay" class="play-overlay">&#9658;</div>
+            <progress id="videoProgress" value="0" max="100"></progress>
         </div>
 
         <div class="video-list-container" id="videoList"></div>
