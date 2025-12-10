@@ -41,11 +41,11 @@ Protect our unity in prayer from the schemes of the evil one.`,
     },
     {
         title: "Prayer Academy",
-        text: `Each new member is prepared by God, joins the right group, and grows in his or her understanding of the seriousness of this work and their usefulness to it.
+        text: `Our church ministry is profoundly impacted by prayer. God's kingdom is established and Satan's influence brought to nothing through the power of the gospel.
 
-Prepare leaders to lead in accordance with our values, in great solemnity and to facilitate the work of the Spirit.
+Our church grows in love, holiness, and power. Sinners are to be added to the church, discipled, and sent out. More members commit themselves to serious and sacrificial prayer.
 
-New gatherings to be planted and used mightily for the Lord's glory.`,
+Other churches adopt PDA and the Lord greatly blesses their use of it.`,
     },
     {
         title: "Prayer Outworking",
@@ -56,3 +56,4 @@ The Church in our nation turns from her idols of ease and comfort and pursues th
 Revival in our nation: the kingdom of Christ advanced, and the kingdom of darkness crushed under the foot of the church with Christ seen victorious as its head.`,
     },
 ];
+
